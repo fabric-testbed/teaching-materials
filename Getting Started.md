@@ -132,7 +132,17 @@
 6. FABRIC Slices can connect to other testbeds or facilities using Facility Ports.
 
 
-### 3.4 Slice States
+### 3.4 Server Options
+
+In this section, you can find various server options available in FABRIC along with their corresponding versions and release information. Whenever you login to the Jupyter Hub you'll have the option to select the version best suited for you.
+
+- FABRIC Examples v1.4.6, FABlib v1.4.6: released: 06/15/2023, stable: Summer 2023
+- (default) FABRIC Examples v1.5.1, FABlib v1.5.1: released: 06/17/2023, stable: Fall 2023
+- (bleeding edge) FABRIC Examples latest, FABlib latest, Current Release
+- (beyond bleeding edge) FABRIC Examples (main branch), FABlib (master branch)
+
+
+### 3.5 Slice States
 
 There are 6 types of states for a slice.
 | State       | Introduction                                                                                     |
