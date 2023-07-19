@@ -105,6 +105,7 @@
 
 *For more details click here: [Knowledge-Base](https://learn.fabric-testbed.net/article-categories/getting-started/)*
 
+
 ### 3.2 The types of resources FABRIC offers are:
 
 1. FPGA
@@ -119,6 +120,7 @@
 
 *For detailed Testbed Resource Summary click here: [Resources](https://portal.fabric-testbed.net/resources/all)*
 
+
 ### 3.3 Resources are Mapped into VMs:
 
 1. FABRIC provides Virtual machines of different sizes (up to 64 cores, 384G RAM) with directly attached PCI devices.
@@ -128,6 +130,7 @@
 5. VMs or slivers are arranged in slices representing individual experiment topologies. Slices can be created, modified, and deleted.
    - Slices have a finite lifetime, but can typically be extended before they expire.
 6. FABRIC Slices can connect to other testbeds or facilities using Facility Ports.
+
 
 ### 3.4 Slice States
 
