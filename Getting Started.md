@@ -21,10 +21,10 @@
 3. **[Generating SSH Configuration and SSH Keys](https://learn.fabric-testbed.net/knowledge-base/generating-ssh-configuration-and-ssh-keys)** *(For detailed instruction:- [https://learn.fabric-testbed.net/knowledge-base/generating-ssh-configuration-and-ssh-keys](https://learn.fabric-testbed.net/knowledge-base/generating-ssh-configuration-and-ssh-keys))*
    - **Generate the ssh keys** -> There are three ways to generate ssh keys:-
         1. [Generating SSH Keys on Linux](https://github.com/fabric-testbed/teaching-materials/blob/main/SSH_keys.md#approach-1--generating-ssh-keys-on-linux)
-        2. Generating SSH Keys on PowerShell
-        3. Generating SSH Keys on Fabric Portal *(Recommended)*
+        2. [Generating SSH Keys on PowerShell](https://github.com/fabric-testbed/teaching-materials/blob/main/SSH_keys.md#approach-2--generating-ssh-keys-on-powershell-windows)
+        3. [Generating SSH Keys on Fabric Portal](https://github.com/fabric-testbed/teaching-materials/blob/main/SSH_keys.md#approach-3--guide-to-generating-ssh-keys-on-fabric-portal) *(Recommended)*
      
-   - **Setup the ssh config file**
+   - **[Setup the ssh config file](https://github.com/fabric-testbed/teaching-materials/blob/main/SSH_keys.md#section-2-using-the-ssh-config-file)**
      
    - **Upload the keys**
         1. **Add Public Key to FABRIC**
