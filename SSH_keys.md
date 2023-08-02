@@ -1,8 +1,61 @@
-# Generating SSH Keys for FABRIC
-
-SSH keys are essential for securely accessing FABRIC resources. This guide will walk you through the process of generating SSH keys and setting up the SSH config file on your local desktop for easier access.
-
 ## Section 1: Step-by-Step Guide: Generating SSH Keys for FABRIC
+
+## Introduction
+
+SSH (Secure Shell) keys are a secure and convenient way to authenticate yourself to remote servers, like the Fabric Portal. In this guide, we will walk you through the process of generating SSH keys on different operating systems, including Linux and PowerShell. Before we proceed, let's briefly understand the different types of SSH keys and their uses.
+
+## Approach 1:- Generating SSH Keys on Linux
+
+### 1. Open Terminal
+
+- Launch the Terminal application on your Linux machine. You can typically find it in the Applications menu under System Tools or Accessories.
+
+### 2. Check for Existing SSH Keys
+
+- Before generating new keys, check if you already have SSH keys on your system. To do this, run the following command: `ls ~/.ssh`
+
+- If you see files like `id_ed25519` and `id_ed25519.pub`, you already have SSH keys, and you may skip the next step and proceed to the "Using Existing SSH Keys" section. If not, continue to the next step.
+
+### 3. Generate SSH Key Pair
+
+- For Ed25519 key pair, use the following command: `ssh-keygen -t ed25519 -C "your_email@example.com"`
+
+- You will be prompted to enter a location to save the keys. Press `Enter` to accept the default location `~/.ssh/filename` and then choose a passphrase to secure your private key.
+
+### 4. View and Copy Public Key
+
+- To view your public key, use the following command:
+``cat ~/.ssh/id_ed25519.pub # for Ed25519 key``
+
+- Copy the entire contents of the public key to your clipboard.
+
+## Approach 2:- Generating SSH Keys on PowerShell (Windows)
+
+### 1. Open PowerShell
+
+- Open PowerShell by searching for "PowerShell" in the Start menu or pressing `Win + X` and selecting "Windows PowerShell" or "Windows PowerShell (Admin)".
+
+### 2. Check for Existing SSH Keys
+
+- Use the following command to check for existing SSH keys: `ls ~/.ssh`
+
+- If you see files like `id_ed25519` and `id_ed25519.pub`, you already have SSH keys, and you may skip the next step and proceed to the "Using Existing SSH Keys" section. If not, continue to the next step.
+
+### 3. Generate SSH Key Pair
+
+- For Ed25519 key pair, use the following command: `ssh-keygen -t ed25519 -C "your_email@example.com"`
+
+- You will be prompted to enter a location to save the keys. Press `Enter` to accept the default location `C:\Users\<YourUsername>\.ssh\filename` and then choose a passphrase to secure your private key.
+
+### 4. View and Copy Public Key
+
+- To view your public key, use the following command:
+``cat C:\Users<YourUsername>.ssh\filename.pub # for Ed25519 key``
+
+
+- Copy the entire contents of the public key to your clipboard.
+
+# Approach 3:- Guide to Generating SSH Keys on Fabric Portal
 
 1. **Access the FABRIC Portal**
    - Open your web browser and go to the FABRIC portal at [https://portal.fabric-testbed.net/](https://portal.fabric-testbed.net/).
@@ -25,30 +78,21 @@ SSH keys are essential for securely accessing FABRIC resources. This guide will 
 6. **Set a Name**
    - Enter a descriptive name for your SSH key (e.g., "My FABRIC SSH Key").
 
-7. **Optional: Choose Key Type and Size**
-   - By default, RSA key type with 2048 bits is selected, and it is recommended to keep the default settings. If you wish to change the key type or size, you can do so from the dropdown menus.
-
-8. **Click on "Generate"**
+7. **Click on "Generate"**
    - Click the "Generate" button to create your SSH key pair.
 
-9. **Save the Private Key**
-   - After the key pair is generated, the private key file will be automatically downloaded to your computer. Save this file to a secure location (e.g., your computer's Downloads folder).
+8. **Save the Private Key**
+   - After the key pair is generated, the private key file will be automatically downloaded to your computer. Save this file to a secure location (e.g., C:\Users\<YourUsername>\.ssh\filename).
 
-10. **Copy the Public Key**
+9. **Copy the Public Key**
     - The public key will be displayed on the portal. Copy the entire content of the public key (starts with "ssh-rsa") to your clipboard.
 
-11. **Add Public Key to FABRIC**
-    - Go back to the FABRIC portal and navigate to the SSH Keys section (if not already there).
-    - Click on the "Add Public Key" button.
-
-12. **Paste Public Key**
-    - In the "Add Public Key" dialog box, paste the public key that you copied in Step 10.
-
-13. **Save Public Key**
-    - Click the "Save" button to add your public key to the FABRIC portal.
 
 You have successfully generated your SSH key pair and added the public key to the FABRIC portal. Now, you can use the private key to access FABRIC resources securely. Make sure to keep the private key safe and do not share it with anyone. 
 
+## Using Existing SSH Keys
+
+If you already have SSH keys generated, you can use them without generating new ones. Simply copy the public key and add it to your Fabric Portal account.
 
 ## Section 2: Using the SSH Config File:
 
