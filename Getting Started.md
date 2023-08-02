@@ -30,9 +30,9 @@
         1. **Add Public Key to FABRIC**
            - Go back to the FABRIC portal and navigate to the SSH Keys section (if not already there).
            - Click on the "Add Public Key" button.
-         2. **Paste Public Key**
+       2. **Paste Public Key**
            - In the "Add Public Key" dialog box, paste the public key that you copied.
-         3. **Save Public Key**
+       3. **Save Public Key**
            - Click the "Save" button to add your public key to the FABRIC portal.
 
 4. **[Creating your first experiment in Jupyter Hub](https://learn.fabric-testbed.net/knowledge-base/creating-your-first-experiment-in-jupyter-hub)** *(For detailed instruction:- [https://learn.fabric-testbed.net/knowledge-base/creating-your-first-experiment-in-jupyter-hub](https://learn.fabric-testbed.net/knowledge-base/creating-your-first-experiment-in-jupyter-hub))*
