@@ -19,14 +19,14 @@
      A Project Lead or a Project Owner can add new Owners and Members by first navigating to the project via Experiments/Projects & Slices or User Profile/My Roles & Projects. Using the search box, you can find the user you want to add (minimum 4 consecutive letters of email or name are required for search) and click ‘Add’ next to their name.
 
 3. **[Generating SSH Configuration and SSH Keys](https://learn.fabric-testbed.net/knowledge-base/generating-ssh-configuration-and-ssh-keys)** *(For detailed instruction:- [https://learn.fabric-testbed.net/knowledge-base/generating-ssh-configuration-and-ssh-keys](https://learn.fabric-testbed.net/knowledge-base/generating-ssh-configuration-and-ssh-keys))*
-   - Generate the ssh keys -> There are three ways to generate ssh keys:-
+   - **Generate the ssh keys** -> There are three ways to generate ssh keys:-
         1. Generating SSH Keys on Linux 
-        2. Generating SSH Keys on PowerShell (Windows)
+        2. Generating SSH Keys on PowerShell
         3. Generating SSH Keys on Fabric Portal *(Recommended)*
      
-   - Setup the ssh config file
+   - **Setup the ssh config file**
      
-   - Upload the keys
+   - **Upload the keys**
         1. **Add Public Key to FABRIC**
            - Go back to the FABRIC portal and navigate to the SSH Keys section (if not already there).
            - Click on the "Add Public Key" button.
