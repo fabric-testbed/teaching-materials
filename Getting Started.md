@@ -2,7 +2,7 @@
 
 ## Section 1: Get Started
 
-1. **[Signing up for a FABRIC account](https://learn.fabric-testbed.net/knowledge-base/signing-up-for-a-fabric-account)** *(For detailed view click on the heading)*
+1. **[Signing up for a FABRIC account](https://learn.fabric-testbed.net/knowledge-base/signing-up-for-a-fabric-account)** *(For detailed instructions: [https://learn.fabric-testbed.net/knowledge-base/signing-up-for-a-fabric-account](https://learn.fabric-testbed.net/knowledge-base/signing-up-for-a-fabric-account) )*
    - Navigate to the FABRIC portal at [https://portal.fabric-testbed.net/](https://portal.fabric-testbed.net/).
    - *Make sure you accept the cookie policy. Skipping the cookie policy will prevent you from enrolling.*
    - Then click the “Sign up” button in the upper right corner of the browser window. This will take you to the FABRIC Sign Up workflow. Currently, FABRIC requires that you use your institutional login to login to FABRIC using a system called CI Logon.
