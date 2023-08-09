@@ -91,7 +91,7 @@ SSH (Secure Shell) keys are a secure and convenient way to authenticate yourself
 
 10. **Upload the Bastion key**
     - Upload the bastion key to the Jupyter Hub to access the VMs.
-      ![ssh keys](https://transfer.sh/GbqLsGLnGJ/Screenshot%202023-08-09%20at%202.40.32%20AM.png)
+      ![ssh keys](https://transfer.sh/V9dNRwVNsE/Screenshot%202023-08-09%20at%202.40.32%20AM.png)
 
 You have successfully generated your SSH key pair and added the public key to the FABRIC portal. Now, you can use the private key to access FABRIC resources securely. Make sure to keep the private key safe and do not share it with anyone. 
 
