@@ -24,7 +24,7 @@ Creating experiments on FABRIC using JupyterHub is straightforward. Here's a ste
 4. **Select a Server Option:**
    - Upon Login, different server options will be provided to you. Choose which ever best suits your work. (*It is recommended to use the default option*). 
    
-   ![Select a Server Option](https://transfer.sh/2V9SVhsHfl/Screenshot%202023-08-09%20at%202.20.56%20AM.png)
+   ![Select a Server Option](https://transfer.sh/A84IsgftTr/Screenshot%202023-08-09%20at%202.20.56%20AM.png)
    
 5. **Log in again with Institutional ID:**
    - Login using your institutional ID and password.
