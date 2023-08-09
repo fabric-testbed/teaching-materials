@@ -40,10 +40,6 @@
    - Login with your institutional ID and password. When you log in for the first time, a private JupyterHub environment will be built for you.
    - Your JupyterHub environment is a private container that includes a file system where you can store your FABRIC experiment notebooks. By default, FABRIC includes a set of example notebooks that demonstrate the use of the FABRIC Python API.
 
-5. **[Creating your first slice in the Portal](https://learn.fabric-testbed.net/knowledge-base/portal-slice-builder-user-guide)** *(For detailed instruction:- [https://learn.fabric-testbed.net/knowledge-base/portal-slice-builder-user-guide](https://learn.fabric-testbed.net/knowledge-base/portal-slice-builder-user-guide))*
-   - You need to choose a project first from the Experiments page -> Projects & Slices tab. Your rights of FABRIC resources when creating a slice depend on this project’s permissions.
-   - If you don’t have any slice in this selected project yet, you will see the callout message below. Click the button "Create Slice in Portal" will lead you to the portal slice builder page; Click the button "Create Slice in JupyterHub" will lead you to the JupyterHub login interface.
-   - If you have slices in this selected project, you will see the slices table with filter and search. Click on the "Create Slice" button will lead you to the portal slice builder page.
 
 ## Section 2: List of Assignments
 
