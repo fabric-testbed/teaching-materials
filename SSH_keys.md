@@ -102,6 +102,8 @@ If you already have SSH keys generated, you can use them without generating new 
    - Navigate to your home directory by entering `cd ~` in the terminal.
    - Check if you already have an SSH config file by running `ls -a ~/.ssh`. If the file does not exist, create it by running `touch ~/.ssh/config`.
 
+     ![ssh config](https://transfer.sh/FCgt33kcLq/Screenshot%202023-08-09%20at%202.52.14%20AM.png)
+
 2. **Edit the SSH Config File:**
    - Use a text editor (such as nano, vi, or any text editor of your choice) to open the SSH config file. For example, `nano ~/.ssh/config`.
    - Add the following configuration for FABRIC's bastion host:
