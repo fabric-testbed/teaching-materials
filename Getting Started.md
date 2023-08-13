@@ -11,26 +11,27 @@
    - The system will send you an email asking for you to verify your email address. Click the link in your email. At this point, the FABRIC admins have been notified of your request. You need to wait until a FABRIC admin approves your request.
    - After receiving the FABRIC approval email, you can access FABRIC. Please return to the FABRIC portal and login. Login with your institutional ID and password.
 
-2. **[Creating or Joining a Project](https://learn.fabric-testbed.net/knowledge-base/creating-or-joining-a-project)** *(For detailed instruction:- [https://learn.fabric-testbed.net/knowledge-base/creating-or-joining-a-project](https://learn.fabric-testbed.net/knowledge-base/creating-or-joining-a-project))*
+2. **[Creating or Joining a Project](https://github.com/fabric-testbed/teaching-materials/blob/main/Creating%20Project.md#creating-or-joining-a-project)** *(For detailed instruction:- [https://github.com/fabric-testbed/teaching-materials/blob/main/Creating%20Project.md#creating-or-joining-a-project](https://github.com/fabric-testbed/teaching-materials/blob/main/Creating%20Project.md#creating-or-joining-a-project))*
    - Creating a Project:
      Only users that have been granted the role of a Project Lead can create new projects and add members into them. When creating a new project, it is important to think through its purpose and its membership as FABRIC permissions are granted on a per-project basis. Also, it is important to fill out a description for the project as those are public by default (searchable by other FABRIC users). You can select your project not to be public using checkmarks in the project ‘Basic Information’ tab.
    - Joining a Project:
      Before you can use the testbed, you must join an active project. A project owner must add you to a project.
      A Project Lead or a Project Owner can add new Owners and Members by first navigating to the project via Experiments/Projects & Slices or User Profile/My Roles & Projects. Using the search box, you can find the user you want to add (minimum 4 consecutive letters of email or name are required for search) and click ‘Add’ next to their name.
 
-3. **[Generating SSH Configuration and SSH Keys](https://learn.fabric-testbed.net/knowledge-base/generating-ssh-configuration-and-ssh-keys)** *(For detailed instruction:- [https://learn.fabric-testbed.net/knowledge-base/generating-ssh-configuration-and-ssh-keys](https://learn.fabric-testbed.net/knowledge-base/generating-ssh-configuration-and-ssh-keys))*
+3. **[Generating SSH Configuration and SSH Keys](https://github.com/fabric-testbed/teaching-materials/blob/main/SSH_keys.md#section-1-step-by-step-guide-generating-ssh-keys-for-fabric)** *(For detailed instruction:- [https://github.com/fabric-testbed/teaching-materials/blob/main/SSH_keys.md#section-1-step-by-step-guide-generating-ssh-keys-for-fabric](https://github.com/fabric-testbed/teaching-materials/blob/main/SSH_keys.md#section-1-step-by-step-guide-generating-ssh-keys-for-fabric))*
    - **Generate the ssh keys** -> There are three ways to generate ssh keys:-
         1. [Generating SSH Keys on Linux](https://github.com/fabric-testbed/teaching-materials/blob/main/SSH_keys.md#approach-1--generating-ssh-keys-on-linux)
         2. [Generating SSH Keys on PowerShell](https://github.com/fabric-testbed/teaching-materials/blob/main/SSH_keys.md#approach-2--generating-ssh-keys-on-powershell-windows)
         3. [Generating SSH Keys on Fabric Portal](https://github.com/fabric-testbed/teaching-materials/blob/main/SSH_keys.md#approach-3--guide-to-generating-ssh-keys-on-fabric-portal) *(Recommended)*
 
-4. **[Creating your first experiment in Jupyter Hub](https://learn.fabric-testbed.net/knowledge-base/creating-your-first-experiment-in-jupyter-hub)** *(For detailed instruction:- [https://learn.fabric-testbed.net/knowledge-base/creating-your-first-experiment-in-jupyter-hub](https://learn.fabric-testbed.net/knowledge-base/creating-your-first-experiment-in-jupyter-hub))*
+4. **[Creating experiment in Jupyter Hub](https://github.com/fabric-testbed/teaching-materials/blob/main/Creating%20Experiment%20in%20Jupyter%20Hub.md#creating-your-first-experiment-in-jupyter-hub)** *(For detailed instruction:- [https://github.com/fabric-testbed/teaching-materials/blob/main/Creating%20Experiment%20in%20Jupyter%20Hub.md#creating-your-first-experiment-in-jupyter-hub](https://github.com/fabric-testbed/teaching-materials/blob/main/Creating%20Experiment%20in%20Jupyter%20Hub.md#creating-your-first-experiment-in-jupyter-hub))*
    - The easiest way to create experiments on FABRIC is using JupyterHub. You can create your private JupyterHub environment by logging into the FABRIC portal and clicking Links->JupyterHub
    - Login with your institutional ID and password. When you log in for the first time, a private JupyterHub environment will be built for you.
    - Your JupyterHub environment is a private container that includes a file system where you can store your FABRIC experiment notebooks. By default, FABRIC includes a set of example notebooks that demonstrate the use of the FABRIC Python API.
 
 5. **[Login and Upload ssh keys](https://github.com/fabric-testbed/teaching-materials/blob/main/SSH_keys.md#section-2-using-the-ssh-config-file)** *(For detailed instruction:- [https://github.com/fabric-testbed/teaching-materials/blob/main/SSH_keys.md#section-2-using-the-ssh-config-file](https://github.com/fabric-testbed/teaching-materials/blob/main/SSH_keys.md#section-2-using-the-ssh-config-file))*
-   - 
+   - After logging into the Juoyter Hub.
+     
    - **[Setup the ssh config file](https://github.com/fabric-testbed/teaching-materials/blob/main/SSH_keys.md#section-2-using-the-ssh-config-file)**
      
    - **Upload the keys**
@@ -42,11 +43,12 @@
        3. **Save Public Key**
            - Click the "Save" button to add your public key to the FABRIC portal.
 
-6. **[First experiment in Jupyter Hub](https://learn.fabric-testbed.net/knowledge-base/creating-your-first-experiment-in-jupyter-hub)** *(For detailed instruction:- [https://learn.fabric-testbed.net/knowledge-base/creating-your-first-experiment-in-jupyter-hub](https://learn.fabric-testbed.net/knowledge-base/creating-your-first-experiment-in-jupyter-hub))*
+7. **[First experiment in Jupyter Hub](https://github.com/fabric-testbed/teaching-materials/blob/main/First%20Experiment%20in%20Jupyter%20Hub.md#first-experiment-in-jupyter-hub)** *(For detailed instruction:- [https://github.com/fabric-testbed/teaching-materials/blob/main/First%20Experiment%20in%20Jupyter%20Hub.md#first-experiment-in-jupyter-hub](https://github.com/fabric-testbed/teaching-materials/blob/main/First%20Experiment%20in%20Jupyter%20Hub.md#first-experiment-in-jupyter-hub))*
    - The easiest way to create experiments on FABRIC is using JupyterHub. You can create your private JupyterHub environment by logging into the FABRIC portal and clicking Links->JupyterHub
    - Login with your institutional ID and password. When you log in for the first time, a private JupyterHub environment will be built for you.
    - Your JupyterHub environment is a private container that includes a file system where you can store your FABRIC experiment notebooks. By default, FABRIC includes a set of example notebooks that demonstrate the use of the FABRIC Python API.
 
+*For more information click here: [FABRIC Knowledge-Base](https://learn.fabric-testbed.net))*
 
 ## Section 2: List of Assignments
 
