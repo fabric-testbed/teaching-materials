@@ -20,17 +20,17 @@
 
 3. **[Generating SSH Configuration and SSH Keys](https://github.com/fabric-testbed/teaching-materials/blob/main/SSH_keys.md#section-1-step-by-step-guide-generating-ssh-keys-for-fabric)** *(For detailed instruction:- [https://github.com/fabric-testbed/teaching-materials/blob/main/SSH_keys.md#section-1-step-by-step-guide-generating-ssh-keys-for-fabric](https://github.com/fabric-testbed/teaching-materials/blob/main/SSH_keys.md#section-1-step-by-step-guide-generating-ssh-keys-for-fabric))*
    - **Generate the ssh keys** -> There are three ways to generate ssh keys:-
-        1. [Generating SSH Keys on Linux](https://github.com/fabric-testbed/teaching-materials/blob/main/SSH_keys.md#approach-1--generating-ssh-keys-on-linux)
+        1. [Generating SSH Keys on Fabric Portal](https://github.com/fabric-testbed/teaching-materials/blob/main/SSH_keys.md#approach-3--guide-to-generating-ssh-keys-on-fabric-portal) *(Recommended)*
         2. [Generating SSH Keys on PowerShell](https://github.com/fabric-testbed/teaching-materials/blob/main/SSH_keys.md#approach-2--generating-ssh-keys-on-powershell-windows)
-        3. [Generating SSH Keys on Fabric Portal](https://github.com/fabric-testbed/teaching-materials/blob/main/SSH_keys.md#approach-3--guide-to-generating-ssh-keys-on-fabric-portal) *(Recommended)*
+        3. [Generating SSH Keys on Linux](https://github.com/fabric-testbed/teaching-materials/blob/main/SSH_keys.md#approach-1--generating-ssh-keys-on-linux)
 
-4. **[Creating experiment in Jupyter Hub](https://github.com/fabric-testbed/teaching-materials/blob/main/Creating%20Experiment%20in%20Jupyter%20Hub.md#creating-your-first-experiment-in-jupyter-hub)** *(For detailed instruction:- [https://github.com/fabric-testbed/teaching-materials/blob/main/Creating%20Experiment%20in%20Jupyter%20Hub.md#creating-your-first-experiment-in-jupyter-hub](https://github.com/fabric-testbed/teaching-materials/blob/main/Creating%20Experiment%20in%20Jupyter%20Hub.md#creating-your-first-experiment-in-jupyter-hub))*
+4. **[Loggin into Jupyter Hub](https://github.com/fabric-testbed/teaching-materials/blob/main/Creating%20Experiment%20in%20Jupyter%20Hub.md#creating-your-first-experiment-in-jupyter-hub)** *(For detailed instruction:- [https://github.com/fabric-testbed/teaching-materials/blob/main/Creating%20Experiment%20in%20Jupyter%20Hub.md#creating-your-first-experiment-in-jupyter-hub](https://github.com/fabric-testbed/teaching-materials/blob/main/Creating%20Experiment%20in%20Jupyter%20Hub.md#creating-your-first-experiment-in-jupyter-hub))*
    - The easiest way to create experiments on FABRIC is using JupyterHub. You can create your private JupyterHub environment by logging into the FABRIC portal and clicking Links->JupyterHub
    - Login with your institutional ID and password. When you log in for the first time, a private JupyterHub environment will be built for you.
    - Your JupyterHub environment is a private container that includes a file system where you can store your FABRIC experiment notebooks. By default, FABRIC includes a set of example notebooks that demonstrate the use of the FABRIC Python API.
 
 5. **[Login and Upload ssh keys](https://github.com/fabric-testbed/teaching-materials/blob/main/SSH_keys.md#section-2-using-the-ssh-config-file)** *(For detailed instruction:- [https://github.com/fabric-testbed/teaching-materials/blob/main/SSH_keys.md#section-2-using-the-ssh-config-file](https://github.com/fabric-testbed/teaching-materials/blob/main/SSH_keys.md#section-2-using-the-ssh-config-file))*
-   - After logging into the Juoyter Hub.
+   - After logging into the Jupyter Hub.
      
    - **[Setup the ssh config file](https://github.com/fabric-testbed/teaching-materials/blob/main/SSH_keys.md#section-2-using-the-ssh-config-file)**
      
