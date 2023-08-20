@@ -26,11 +26,11 @@
         2. [Generating SSH Keys on PowerShell](https://github.com/fabric-testbed/teaching-materials/blob/main/Generating%20SSH%20Keys%20on%20PowerShell.md#approach-2--generating-ssh-keys-on-powershell-windows)
         3. [Generating SSH Keys on Linux](https://github.com/fabric-testbed/teaching-materials/blob/main/Generating%20SSH%20Keys%20on%20Linux.md#approach-3--generating-ssh-keys-on-linux)
 
-4. **[Logging in to Jupyter Hub](https://github.com/fabric-testbed/teaching-materials/blob/main/Creating%20Experiment%20in%20Jupyter%20Hub.md#creating-your-first-experiment-in-jupyter-hub)** 
+4. **[Logging in to Jupyter Hub](https://github.com/fabric-testbed/teaching-materials/blob/main/Logging%20in%20to%20Jupyter%20Hub.md#logging-in-to-jupyter-hub)** 
    - The easiest way to create experiments on FABRIC is using JupyterHub. You can create your private JupyterHub environment by logging into the FABRIC portal and clicking Links->JupyterHub
    - Login with your institutional ID and password. When you log in for the first time, a private JupyterHub environment will be built for you.
    - Your JupyterHub environment is a private container that includes a file system where you can store your FABRIC experiment notebooks. By default, FABRIC includes a set of example notebooks that demonstrate the use of the FABRIC Python API.
-   - For detailed instruction: [https://github.com/fabric-testbed/teaching-materials/blob/main/Creating%20Experiment%20in%20Jupyter%20Hub.md#creating-your-first-experiment-in-jupyter-hub](https://github.com/fabric-testbed/teaching-materials/blob/main/Creating%20Experiment%20in%20Jupyter%20Hub.md#creating-your-first-experiment-in-jupyter-hub)
+   - For detailed instruction: [https://github.com/fabric-testbed/teaching-materials/blob/main/Logging%20in%20to%20Jupyter%20Hub.md#logging-in-to-jupyter-hub](https://github.com/fabric-testbed/teaching-materials/blob/main/Logging%20in%20to%20Jupyter%20Hub.md#logging-in-to-jupyter-hub)
 
 5. **[Upload ssh keys and setup config file](https://github.com/fabric-testbed/teaching-materials/blob/main/SSH_keys.md#section-2-using-the-ssh-config-file)**
    - After logging into the Jupyter Hub.
@@ -40,14 +40,20 @@
    - **[Setup the ssh config file](https://github.com/fabric-testbed/teaching-materials/blob/main/SSH%20Config%20File.md#creating-an-ssh-client-configuration-file)**
      
 
-7. **[First experiment in Jupyter Hub](https://github.com/fabric-testbed/teaching-materials/blob/main/First%20Experiment%20in%20Jupyter%20Hub.md#first-experiment-in-jupyter-hub)** 
+6. **[First experiment in Jupyter Hub](https://github.com/fabric-testbed/teaching-materials/blob/main/First%20Experiment%20in%20Jupyter%20Hub.md#first-experiment-in-jupyter-hub)** 
    - The easiest way to create experiments on FABRIC is using JupyterHub. You can create your private JupyterHub environment by logging into the FABRIC portal and clicking Links->JupyterHub
    - Login with your institutional ID and password. When you log in for the first time, a private JupyterHub environment will be built for you.
    - Your JupyterHub environment is a private container that includes a file system where you can store your FABRIC experiment notebooks. By default, FABRIC includes a set of example notebooks that demonstrate the use of the FABRIC Python API.
    - For detailed instruction: [https://github.com/fabric-testbed/teaching-materials/blob/main/First%20Experiment%20in%20Jupyter%20Hub.md#first-experiment-in-jupyter-hub](https://github.com/fabric-testbed/teaching-materials/blob/main/First%20Experiment%20in%20Jupyter%20Hub.md#first-experiment-in-jupyter-hub)
   
-8. **[Accessing VMs Using SSH]**
-   - 
+7. **[Accessing VMs Using SSH](https://github.com/fabric-testbed/teaching-materials/blob/main/Logging%20into%20FABRIC%20VMs.md#logging-into-fabric-vms)**
+   - To log into the VM slivers within your FABRIC slice, you need to utilize a bastion host or 'hop node'. This is a security measure to provide controlled access.
+   - Use the SSH config file to simplify access. For example, when using the "Hello FABRIC" notebook, follow these steps:
+         a. Copy management IP from your node.
+         b. Open SSH terminal.
+         c. Enter: ssh -i /path/to/slice/private/key -F /path/to/SSH/config user@management_ip.
+         d. Replace placeholders with actual paths and IP.
+   - For detailed instruction: [https://github.com/fabric-testbed/teaching-materials/blob/main/Logging%20into%20FABRIC%20VMs.md#logging-into-fabric-vms](https://github.com/fabric-testbed/teaching-materials/blob/main/Logging%20into%20FABRIC%20VMs.md#logging-into-fabric-vms)
 
 *For more information click here: [FABRIC Knowledge-Base](https://learn.fabric-testbed.net))*
 
