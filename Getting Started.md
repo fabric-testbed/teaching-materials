@@ -32,7 +32,7 @@
    - Your JupyterHub environment is a private container that includes a file system where you can store your FABRIC experiment notebooks. By default, FABRIC includes a set of example notebooks that demonstrate the use of the FABRIC Python API.
    - For detailed instruction: [https://github.com/fabric-testbed/teaching-materials/blob/main/Logging%20in%20to%20Jupyter%20Hub.md#logging-in-to-jupyter-hub](https://github.com/fabric-testbed/teaching-materials/blob/main/Logging%20in%20to%20Jupyter%20Hub.md#logging-in-to-jupyter-hub)
 
-5. **[Upload ssh keys and setup config file](https://github.com/fabric-testbed/teaching-materials/blob/main/SSH_keys.md#section-2-using-the-ssh-config-file)**
+5. **[Upload ssh keys and setup config file](https://portal.fabric-testbed.net)**
    - After logging into the Jupyter Hub.
      
    - **[Upload the keys](https://github.com/fabric-testbed/teaching-materials/blob/main/Upload%20the%20keys.md#upload-your-private-key-to-the-fabric-config-directory-in-fabric-jupyterlab)**
