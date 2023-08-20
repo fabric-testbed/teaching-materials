@@ -2,7 +2,7 @@
 
 ## Introduction
 
-SSH (Secure Shell) keys are a secure and convenient way to authenticate yourself to remote servers, like the Fabric Portal. In this guide, we will walk you through the process of generating SSH keys on different operating systems, including Linux and PowerShell. Before we proceed, let's briefly understand the different types of SSH keys and their uses.
+SSH (Secure Shell) keys are a secure and convenient way to authenticate yourself to remote servers, like the Fabric Portal. 
 
 ## Approach 3:- Generating SSH Keys on Linux
 
