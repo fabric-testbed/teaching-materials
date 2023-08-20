@@ -2,7 +2,7 @@
 
 ## Introduction
 
-SSH (Secure Shell) keys are a secure and convenient way to authenticate yourself to remote servers, like the Fabric Portal.
+SSH (Secure Shell) keys are a secure and convenient way to authenticate yourself to remote servers, like the Fabric Portal. In order to minimize security incidents on FABRIC, access to VMs and other resources administered by users is controlled using a bastion host. You will need to set up an ssh keypair that will be used to jump through the bastion host to your VMs and other resources. This keypair is unique to you and is only used to set up ssh proxy connections through the bastion host to your FABRIC resources.
 
 # Approach 1:- Guide to Generating SSH Keys on Fabric Portal
 
