@@ -1,4 +1,4 @@
-# Creating Your First Experiment in Jupyter Hub
+# Logging in to Jupyter Hub
 
 **Note: Follow the Steps Carefully**
 
