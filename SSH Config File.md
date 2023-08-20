@@ -104,9 +104,13 @@ Host * !bastion.fabric-testbed.net
 EOF
 ```
 
+
+
 > **Important Note:** If you have already utilized the FABRIC portal to set up the environment using the "Configure Environment" option, you can skip the manual steps outlined below. The following instructions are relevant when generating SSH keys using Linux or PowerShell.
 
 **Please proceed with the manual approach only if the portal setup was not utilized.**
+
+
 
 
 ## For Linux and Powershell (Manual Approach)
