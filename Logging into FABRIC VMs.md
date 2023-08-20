@@ -34,5 +34,5 @@ To demonstrate how to use the SSH config file, consider an example. Use the SSH 
 3. Open your SSH terminal.
 4. Type: `ssh -i <private sliver key file> -F /path/to/SSH/config user@management_ip`.
    - Replace the placeholders <private sliver key file> with actual paths and management_ip with the actual IP address.
- ![Managemnet IP](https://file.io/xGOoqxLzhtjN)
+ ![Managemnet IP](https://file.io/FHLVSXRLdgCz)
 You have successfully accessed your remote host using the SSH config.
