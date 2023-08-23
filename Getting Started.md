@@ -18,7 +18,7 @@
    - Joining a Project:
      Before you can use the testbed, you must join an active project. A project owner must add you to a project.
      A Project Lead or a Project Owner can add new Owners and Members by first navigating to the project via Experiments/Projects & Slices or User Profile/My Roles & Projects. Using the search box, you can find the user you want to add (minimum 4 consecutive letters of email or name are required for search) and click ‘Add’ next to their name.
-     - For detailed instruction: [https://github.com/fabric-testbed/teaching-materials/blob/main/Creating%20Project.md#creating-or-joining-a-project](https://github.com/fabric-testbed/teaching-materials/blob/main/Creating%20Project.md#creating-or-joining-a-project)
+   - For detailed instruction: [https://github.com/fabric-testbed/teaching-materials/blob/main/Creating%20Project.md#creating-or-joining-a-project](https://github.com/fabric-testbed/teaching-materials/blob/main/Creating%20Project.md#creating-or-joining-a-project)
 
 3. **[Generating SSH Keys](https://github.com/fabric-testbed/teaching-materials/blob/main/Generating%20SSH%20Keys%20on%20Fabric%20Portal.md#approach-1--guide-to-generating-ssh-keys-on-fabric-portal)** 
    - **Generate the ssh keys** -> There are three ways to generate ssh keys:-
