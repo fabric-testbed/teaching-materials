@@ -18,9 +18,9 @@
    - Joining a Project:
      Before you can use the testbed, you must join an active project. A project owner must add you to a project.
      A Project Lead or a Project Owner can add new Owners and Members by first navigating to the project via Experiments/Projects & Slices or User Profile/My Roles & Projects. Using the search box, you can find the user you want to add (minimum 4 consecutive letters of email or name are required for search) and click ‘Add’ next to their name.
-     For detailed instruction: [https://github.com/fabric-testbed/teaching-materials/blob/main/Creating%20Project.md#creating-or-joining-a-project](https://github.com/fabric-testbed/teaching-materials/blob/main/Creating%20Project.md#creating-or-joining-a-project)
+   - For detailed instruction: [https://github.com/fabric-testbed/teaching-materials/blob/main/Creating%20Project.md#creating-or-joining-a-project](https://github.com/fabric-testbed/teaching-materials/blob/main/Creating%20Project.md#creating-or-joining-a-project)
 
-3. **[Generating SSH Keys](https://portal.fabric-testbed.net/)** 
+3. **[Generating SSH Keys](https://github.com/fabric-testbed/teaching-materials/blob/main/Generating%20SSH%20Keys%20on%20Fabric%20Portal.md#approach-1--guide-to-generating-ssh-keys-on-fabric-portal)** 
    - **Generate the ssh keys** -> There are three ways to generate ssh keys:-
         1. [Generating SSH Keys on Fabric Portal](https://github.com/fabric-testbed/teaching-materials/blob/main/Generating%20SSH%20Keys%20on%20Fabric%20Portal.md#approach-1--guide-to-generating-ssh-keys-on-fabric-portal) *(Recommended)*
         2. [Generating SSH Keys on PowerShell](https://github.com/fabric-testbed/teaching-materials/blob/main/Generating%20SSH%20Keys%20on%20PowerShell.md#approach-2--generating-ssh-keys-on-powershell-windows)
@@ -32,7 +32,7 @@
    - Your JupyterHub environment is a private container that includes a file system where you can store your FABRIC experiment notebooks. By default, FABRIC includes a set of example notebooks that demonstrate the use of the FABRIC Python API.
    - For detailed instruction: [https://github.com/fabric-testbed/teaching-materials/blob/main/Logging%20in%20to%20Jupyter%20Hub.md#logging-in-to-jupyter-hub](https://github.com/fabric-testbed/teaching-materials/blob/main/Logging%20in%20to%20Jupyter%20Hub.md#logging-in-to-jupyter-hub)
 
-5. **[Upload ssh keys and setup config file](https://portal.fabric-testbed.net)**
+5. **[Upload ssh keys and setup config file](https://github.com/fabric-testbed/teaching-materials/blob/main/Upload%20the%20keys.md#upload-your-private-key-to-the-fabric-config-directory-in-fabric-jupyterlab)**
    - After logging into the Jupyter Hub.
      
    - **[Upload the keys](https://github.com/fabric-testbed/teaching-materials/blob/main/Upload%20the%20keys.md#upload-your-private-key-to-the-fabric-config-directory-in-fabric-jupyterlab)**
@@ -55,7 +55,7 @@
          d. Replace placeholders with actual paths and IP.
    - For detailed instruction: [https://github.com/fabric-testbed/teaching-materials/blob/main/Logging%20into%20FABRIC%20VMs.md#logging-into-fabric-vms](https://github.com/fabric-testbed/teaching-materials/blob/main/Logging%20into%20FABRIC%20VMs.md#logging-into-fabric-vms)
 
-*For more information click here: [FABRIC Knowledge-Base](https://learn.fabric-testbed.net))*
+*For more information click here: [FABRIC Knowledge-Base](https://learn.fabric-testbed.net)*
 
 ## Section 2: List of Assignments
 
