@@ -3,10 +3,10 @@
 ## Available Assignment Materials
 There is no need to install any of these materials by the user, They will be installed automatically if the user runs the corresponding Exercise.
 
- - The **PingPlus** is used for the [Ping Layer](https://github.com/fabric-testbed/teaching-materials/tree/main/assignments/Ping.ipynb) Experiment:
+ - The **PingPlus** is used for the [Ping Layer](https://github.com/fabric-testbed/teaching-materials/tree/main/assignments/Ping.ipynb) tutorial:
    + This directory contains the required software to finish the introduction to the ping layer as well as an exercise for the user to complete, this software shows how the ping command could operate by transferring packets
 
- - The **Webserver** is used for the [Webserver](https://github.com/fabric-testbed/teaching-materials/tree/main/assignments/Webserver) Experiment:
+ - The **Webserver** is used for the [Webserver](https://github.com/fabric-testbed/teaching-materials/tree/main/assignments/Webserver)
    + This directory contains a website example to use in the exercise as well as scripts to run on the nodes such that the software is installed correctly.
 
 ## Additional Information
