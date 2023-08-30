@@ -14,7 +14,7 @@ To be able to run the following experiments you will need a fabric account and a
 	- Exploring Routing on The network
 	- Traffic Analysis
 
-## Running the Assignment
+## Running the Assignments
 - The Average Assignment has three Jupyter notebook:
     - **CreateSlice.ipynb**: Creates the FABRIC slice/topology needed for this Assignment
     - **\<Assignment_Name>.ipynb**: Configures the node and starts the \<Assignment_Name> Assignment
