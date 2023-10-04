@@ -8,7 +8,7 @@
    - Then click the “Sign up” button in the upper right corner of the browser window. This will take you to the FABRIC Sign Up workflow. Currently, FABRIC requires that you use your institutional login to login to FABRIC using a system called CI Logon.
    - The next step is to authenticate using CILogon. This step requires logging in with your institutional ID and password.
    - After successfully logging in with CILogon, you will be taken to the self-sign up workflow.
-   - The system will send you an email asking for you to verify your email address. Click the link in your email. At this point, the FABRIC admins have been notified of your request. You need to wait until a FABRIC admin approves your request.
+   - The system will send you an email asking for you to verify your email address. Click the link in your email. 
    - After receiving the FABRIC approval email, you can access FABRIC. Please return to the FABRIC portal and login. Login with your institutional ID and password.
    - For detailed instruction: [https://github.com/fabric-testbed/teaching-materials/blob/main/Signing%20up.md#signing-up-for-a-fabric-account](https://github.com/fabric-testbed/teaching-materials/blob/main/Signing%20up.md#signing-up-for-a-fabric-account)
 
