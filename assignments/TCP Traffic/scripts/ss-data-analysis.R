@@ -9,6 +9,12 @@ TCPdat <- read.csv("~/TCP-ss.csv", header=FALSE)
 names(TCPdat) <- c("TCP", "time")
 dat <- merge(UDPdat, TCPdat, by = "time", all = TRUE)
 dat[is.na(dat)] <- 1
+
+a <- dat[1,1]
+for (i in 0:nrow(dat) ){
+  dat[i,1] <- dat[i,1] - a
+}
+
 print(dat)
 
 q <- ggplot(dat) + geom_line(aes(x=time, y=TCP, colour="TCP")) + 

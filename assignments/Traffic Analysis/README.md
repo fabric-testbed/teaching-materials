@@ -37,8 +37,8 @@ The goal of this exercise is to give user hands-on experience using networking t
 	- NIC_Basic model
 	- "default_ubuntu_20" image
 	- 1 cores
-	- 4 ram
-	- 100 disk space
+	- 2 ram
+	- 10 disk space
  - To successfully run this notebook you should only need to run the code blocks in order from top to bottom
  - **Notes:** If your slice creation fails you can just try to specify a site in the second code block run them again. (you can get a site from "https://portal.fabric-testbed.net/" by looking at the map, use the name **outside** of the parenthesis and make sure the site chosen is up)
 
