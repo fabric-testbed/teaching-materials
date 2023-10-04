@@ -46,7 +46,7 @@ Before proceeding with the sign-up process, ensure you follow these important st
 
 ![Verify Your Email](https://learn.fabric-testbed.net/wp-content/uploads/2021/08/CreateAccount-12-Email-Annotated.png)
 
-6. **Await Admin Approval:**
+6. **Await Approval:**
    - Check your email for approval messages from FABRIC administrators.
 
 ![Await Admin Approval](https://learn.fabric-testbed.net/wp-content/uploads/2021/08/CreateAccount-15-WaitAndCheckEmailForApproval.png)
