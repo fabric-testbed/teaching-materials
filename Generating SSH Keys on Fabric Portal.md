@@ -31,7 +31,7 @@ SSH (Secure Shell) keys are a secure and convenient way to authenticate yourself
    - Click the "Generate" button to create your SSH key pair.
 
 8. **Save the Private Key**
-   - After the key pair is generated, the private key file will be automatically downloaded to your computer. Save this file to a secure location (e.g., C:\Users\<YourUsername>\.ssh\bastion_pvt).
+   - After the key pair is generated, the private key file will be automatically downloaded to your computer. Save this file to a secure location and  rename it.(e.g., C:\Users\<YourUsername>\.ssh\bastion_pvt).
 
 9. **Copy the Public Key**
     - The public key will be displayed on the portal. Copy the entire content of the public key to your PC. Save this file to a secure location (e.g., C:\Users\<YourUsername>\.ssh\bastion_pub).
