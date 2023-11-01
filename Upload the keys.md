@@ -5,4 +5,4 @@
      
   3. Copy your bastion private key to your Jupyter container. Drag/drop your key from your local machine to the file browser in your Juypyter browser window.
      
-![Upload ssh key](https://transfer.sh/TtksdqKFs6/Screenshot%202023-08-20%20at%202.42.55%20PM.png)
+![Image Alt Text](https://drive.google.com/uc?id=1IFhZIQxZldy-I-WGeh6VpOsaOXwVRAD-)
