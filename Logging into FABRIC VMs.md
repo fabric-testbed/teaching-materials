@@ -32,7 +32,9 @@ To demonstrate how to use the SSH config file, consider an example. Use the SSH 
 2. Copy the management IP from your printed node.
   ![Managemnet IP](https://drive.google.com/uc?id=1wY38C8yTpwslUxXdwJfeRMsK0btUaMLl)
 3. Open your SSH terminal.
-4. Type: `ssh -i <path to private sliver key file> -F <path to SSH_config file> user@management_ip`.
-   - Replace the placeholders <private sliver key file> with actual paths and management_ip with the actual IP address.
- ![Managemnet IP](https://file.io/FHLVSXRLdgCz)
+   ![ssh terminal](https://drive.google.com/uc?id=1hbCSJ-ozEg7ry9W8v2JWaZ-OcWkzXerm)
+5. Type: `ssh -i <path to private sliver key file> -F <path to SSH_config file> user@management_ip`.
+   - Replace the placeholders <path to private sliver key file> with actual paths and management_ip with the actual IP address.
+ ![Managemnet IP](https://drive.google.com/uc?id=18A0JAzBBMxscVBruB79glbPtCam5wsNZ)
 You have successfully accessed your remote host using the SSH config.
+![Managemnet IP](https://drive.google.com//uc?id=1CyLZs4OY3Iqh5z50ZZbcYliHetMqlJfM)
