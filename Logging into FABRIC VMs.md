@@ -37,4 +37,4 @@ To demonstrate how to use the SSH config file, consider an example. Use the SSH 
    - Replace the placeholders <path to private sliver key file> with actual paths and management_ip with the actual IP address.
  ![Managemnet IP](https://drive.google.com/uc?id=18A0JAzBBMxscVBruB79glbPtCam5wsNZ)
 You have successfully accessed your remote host using the SSH config.
-![Managemnet IP](https://drive.google.com//uc?id=1CyLZs4OY3Iqh5z50ZZbcYliHetMqlJfM)
+![Managemnet IP](https://drive.google.com/uc?id=1CyLZs4OY3Iqh5z50ZZbcYliHetMqlJfM)
