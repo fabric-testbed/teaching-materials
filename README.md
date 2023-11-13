@@ -15,18 +15,11 @@ To be able to run the following experiments you will need a fabric account and a
 	- Traffic Analysis
 
 ## Running the Assignment
-Before Running Assignments:
-  - Create your ssh keys using the steps provided [HERE](https://github.com/fabric-testbed/teaching-materials/blob/main/Generating%20SSH%20Keys%20on%20Fabric%20Portal.md#approach-1--guide-to-generating-ssh-keys-on-fabric-portal)
-  - After you log in to Jupyterhub navigate to the "fabric_config" folder, this is where you will upload your Keys
-  - Proceed to run 'configure_enviorment.ipynb' notebook and then 'Hello_fabric.ipynb'
-  - if you are able to run 'Hello_fabric' in its entirety without errors you are now able to run the Assignment Notebooks
-    
-The Average Assignment has three Jupyter notebooks:
-  - **CreateSlice.ipynb**: Creates the FABRIC slice/topology needed for this Assignment
-  - **\<Assignment_Name>.ipynb**: Configures the node and starts the \<Assignment_Name> Assignment
-  - **Assignment.ipynb**: Contains questions/tasks to be answered
-
-To run the Assignment:
+- The Average Assignment has three Jupyter notebook:
+    - **CreateSlice.ipynb**: Creates the FABRIC slice/topology needed for this Assignment
+    - **\<Assignment_Name>.ipynb**: Configures the node and starts the \<Assignment_Name> Assignment
+    - **Assignment.ipynb**: Contains questions/tasks to be answered
+- To run the Assignment:
    - Login to the FABRIC Portal and JupyterHub
     	- Login to the [FABRIC Portal](https://portal.fabric-testbed.net/)
     	- Login/connect to the [FABRIC JupyterHub](https://learn.fabric-testbed.net/knowledge-base/creating-your-first-experiment-in-jupyter-hub/)
