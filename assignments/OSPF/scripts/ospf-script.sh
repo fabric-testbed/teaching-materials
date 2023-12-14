@@ -37,8 +37,8 @@ if [[ ! -f $OSPFD ]]; then
     
     #determine first part of hostname
     HOST=`hostname | awk -F'.' '{print $1}'`
-    ETH1IP=`ip addr | grep inet | grep enp7s0 | awk -F " " '{print $2}'`
-    ETH2IP=`ip addr | grep inet | grep enp8s0 | awk -F " " '{print $2}'`
+    ETH1IP=`ip addr | grep inet | grep INTERFACE_NAME_1 | awk -F " " '{print $2}'`
+    ETH2IP=`ip addr | grep inet | grep INTERFACE_NAME_2 | awk -F " " '{print $2}'`
     NET1=`echo $ETH1IP | sed -e 's/.\//0\//g'`
     NET2=`echo $ETH2IP | sed -e 's/.\//0\//g'`
     
@@ -48,21 +48,21 @@ if [[ ! -f $OSPFD ]]; then
     sudo echo " ip address 127.0.0.1/8" >> $ZEBRA_TEMP
     sudo echo " ip forwarding" >> $ZEBRA_TEMP
     sudo echo "!" >> $ZEBRA_TEMP
-    sudo echo "interface enp7s0" >> $ZEBRA_TEMP
-    sudo echo " description enp7s0" >> $ZEBRA_TEMP
+    sudo echo "interface INTERFACE_NAME_1" >> $ZEBRA_TEMP
+    sudo echo " description INTERFACE_NAME_1" >> $ZEBRA_TEMP
     sudo echo " ip address $ETH1IP" >> $ZEBRA_TEMP
     sudo echo " ip forwarding" >> $ZEBRA_TEMP
     sudo echo "!" >> $ZEBRA_TEMP
-    sudo echo "interface enp8s0" >> $ZEBRA_TEMP
-    sudo echo " description enp8s0" >> $ZEBRA_TEMP
+    sudo echo "interface INTERFACE_NAME_2" >> $ZEBRA_TEMP
+    sudo echo " description INTERFACE_NAME_2" >> $ZEBRA_TEMP
     sudo echo " ip address $ETH2IP" >> $ZEBRA_TEMP
     sudo echo " ip forwarding" >> $ZEBRA_TEMP
     sudo echo "log file /var/log/quagga/zebra.log" >> $ZEBRA_TEMP
     sudo mv $ZEBRA_TEMP $ZEBRA
 
     #copy sample ospfd config file and modify
-    sudo echo "interface enp7s0" >> $OSPFD_TEMP
-    sudo echo "interface enp8s0" >> $OSPFD_TEMP
+    sudo echo "interface INTERFACE_NAME_1" >> $OSPFD_TEMP
+    sudo echo "interface INTERFACE_NAME_2" >> $OSPFD_TEMP
     sudo echo "router ospf" >> $OSPFD_TEMP
     sudo echo "network $NET1 area 0" >> $OSPFD_TEMP
     sudo echo "network $NET2 area 0" >> $OSPFD_TEMP

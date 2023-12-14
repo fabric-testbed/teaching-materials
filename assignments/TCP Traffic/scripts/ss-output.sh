@@ -36,4 +36,4 @@ cleanup ()
 
 trap cleanup SIGINT SIGTERM
 
-sudo tcpdump -i ens7 -w packets.pcap
+sudo tcpdump -i INTERFACE_NAME -w packets.pcap
