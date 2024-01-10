@@ -36,9 +36,9 @@ The Goal of this exercise is to show students how to generate traffic using iper
 - Each node should have the following requirements:
 	- NIC_Basic model
 	- "default_ubuntu_20" image
-	- 2 cores
-	- 4 ram
-	- 100 disk space
+	- 1 cores
+	- 2 ram
+	- 10 disk space
  - To successfully run this notebook you should only need to run the code blocks in order from top to bottom
  - **Notes:** If your slice creation fails you can just try to specify a site in the second code block run them again. (you can get a site from "https://portal.fabric-testbed.net/" by looking at the map, use the name **outside** of the parenthesis and make sure the site chosen is up)
   - **Notes:** It can also be the case that your project does not have access to more than 10GB of disk space, you will then have to change the disk space to 10 in the second cell at "create slice" notebook, step **2.2.4 will be 30 seconds instead of 90** and **2.2.5 will be 10 seconds instead of 30** in the "TCP_Traffic" notebook

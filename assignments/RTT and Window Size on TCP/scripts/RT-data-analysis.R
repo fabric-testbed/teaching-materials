@@ -15,7 +15,7 @@ for (i in 0:nrow(TCPdat) ){
 
 print(TCPdat)
 
-q <- ggplot(TCPdat, aes(x = time, y = TCP)) + geom_line(color = "cyan") +
+q <- ggplot(TCPdat, aes(x = time, y = TCP)) + geom_line(color = "red") +
   labs(y = "Packets Transmitted")
 
 print(q)
