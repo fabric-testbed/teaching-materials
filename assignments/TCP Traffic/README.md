@@ -6,7 +6,6 @@ The Goal of this exercise is to show students how to generate traffic using iper
 - The tutorial has three Jupyter notebooks and one folder:
     - **CreateSlice.ipynb**: Creates the FABRIC slice/topology needed for this tutorial
     - **TCP_Traffic.ipynb**: Configures the IPv4/IPv6 network address, installs tools needed and then begins the TCP tutorial
-    - **Assignment.ipynb**: Contains questions/tasks to be answered
 - To run the tutorial:
    - Login to the FABRIC Portal and JupyterHub
     	- Login to the [FABRIC Portal](https://portal.fabric-testbed.net/)
@@ -24,7 +23,6 @@ The Goal of this exercise is to show students how to generate traffic using iper
     	- In the left-hand column of JupyterHub, navigate to the TCP Traffic tutorial
     	- Open and execute the CreateSlice.ipynb notebook
         - Then open and execute the TCP_Traffic.ipynb
-        - Then open and execute the Assignment.ipynb
 
 ## Overview of the Notebooks in this Tutorial
 
@@ -50,10 +48,9 @@ The Goal of this exercise is to show students how to generate traffic using iper
 - **Notes:**
    + if you run out of memory during the assignment be sure to re-try the assignment increasing the disk space by 50 - 100, if the problem persist lower the time the ss program is running.
    + Do not run iperf with the graphing script for more than 2 minutes to avoid memory errors
-### Assignment Notebook
-- In this Assignment you will experiment with inputs to the commands to test the capabilities of the nodes transfer rate.
-- **Notes:** In the case the slice fails to delete please examine the experiment tab on the fabric portal and delete the corresponding slice if it was not already deleted
-
+   - In this Assignment you will experiment with inputs to the commands to test the capabilities of the nodes transfer rate.
+   - **Notes:** In the case the slice fails to delete please examine the experiment tab on the fabric portal and delete the corresponding slice if it was not already deleted
+    
 ## Additional Information
 - FABRIC Learn Website: If you encounter problems,questions, or suggestions, please navigate to the FABRIC Knowledge Base at https://learn.fabric-testbed.net/
 - FABRIC Teaching Material Github: <https://github.com/fabric-testbed/teaching-materials>

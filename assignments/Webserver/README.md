@@ -7,7 +7,6 @@ The goal of this exercise is to give user hands-on experience installing and int
 - The tutorial has three Jupyter notebook:
     - **CreateSlice.ipynb**: Creates the FABRIC slice/topology needed for this tutorial
     - **webserver.ipynb**: Configures the IPv4/IPv6 network address, installs tools needed and then begins the webserver tutorial
-    - **Assignment.ipynb**: Contains questions/tasks to be answered
 - To run the tutorial:
    - Login to the FABRIC Portal and JupyterHub
     	- Login to the [FABRIC Portal](https://portal.fabric-testbed.net/)
@@ -24,8 +23,7 @@ The goal of this exercise is to give user hands-on experience installing and int
    - Run the Tutorial Notebooks
     	- In the left-hand column of JupyterHub, navigate to the Webserver tutorial
     	- Open and execute the CreateSlice.ipynb notebook
-        - Then open and execute the webserver.ipynb
-        - Then open and execute the Assignment.ipynb
+        - Then open and execute the steps on webserver.ipynb
 
 ## Overview of the Notebooks in this Tutorial
 
@@ -47,9 +45,8 @@ The goal of this exercise is to give user hands-on experience installing and int
 - To successfully run this notebook you need to run the code blocks first (*Setup Experiment*) and then run the experiment (*Run Experiment*):
 	- Setup Experiment: This is the setup, run the provided Codeblocks to setup the network and to provide the correct addresses to each node.
     - Run Experiment: This is the Experiment, To complete this section just follow the provided instructions to start and stop the server, use the wget command to get the page, and to start a different server using commands.
-### Assignment Notebook
-- In this Assignment you will answer questions and use what you learned to send codes to the server to see if you can get a responce out of the server. Lastly you will delete the slice to clear resources you used.
-- **Notes:** In the case the slice fails to delete please examine the experiment tab on the fabric portal and delete the corresponding slice if it was not already deleted
+    - In this Assignment you will answer questions and use what you learned to send codes to the server to see if you can get a responce out of the server. Lastly you will delete the slice to clear resources you used.
+    - **Notes:** In the case the slice fails to delete please examine the experiment tab on the fabric portal and delete the corresponding slice if it was not already deleted
 
 ## Additional Information
 - FABRIC Learn Website: If you encounter problems,questions, or suggestions, please navigate to the FABRIC Knowledge Base at https://learn.fabric-testbed.net/

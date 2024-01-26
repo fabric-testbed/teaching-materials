@@ -7,7 +7,6 @@ The goal of the this tutorial is is to understand how delay and the size of a wi
 - The tutorial has three Jupyter notebooks and one folder:
     - **CreateSlice.ipynb**: Creates the FABRIC slice/topology needed for this tutorial
     - **RTT_Window_Size.ipynb**: Configures the IPv4/IPv6 network address, installs tools needed and then begins the TCP effects tutorial
-    - **Assignment.ipynb**: Contains questions/tasks to be answered
 - To run the tutorial:
    - Login to the FABRIC Portal and JupyterHub
     	- Login to the [FABRIC Portal](https://portal.fabric-testbed.net/)
@@ -24,8 +23,8 @@ The goal of the this tutorial is is to understand how delay and the size of a wi
    - Run the Tutorial Notebooks
     	- In the left-hand column of JupyterHub, navigate to the RTT and Window Size on TCP tutorial
     	- Open and execute the CreateSlice.ipynb notebook
-        - Then open and execute the RTT_Window_Size.ipynb
-        - Then open and execute the Assignment.ipynb
+        - Then open and execute the steps on RTT_Window_Size.ipynb
+        
 
 ## Overview of the Notebooks in this Tutorial
 
@@ -47,10 +46,8 @@ The goal of the this tutorial is is to understand how delay and the size of a wi
 - To successfully run this notebook you need to run the code blocks first (*Setup Experiment*) and then run the experiment (*Run Experiment*):
 	- Setup Experiment: This is the setup, run the provided Codeblocks to setup the network and to provide the correct addresses to each node.
     - Run Experiment: This is the Experiment, To complete this section just follow the provided instructions to understand the 5 sections: Adjusting the MTU, Adding and removing delay, and Adjusting TCP window size.
- 
-### Assignment Notebook
-- In this Assignment you will run different alterations of the same experiment with different window and RTT sizes, then you will make inferences based on the figures created, after you will answer some questions. Lastly you will delete the slice to clear resources you used.
-- **Notes:** In the case the slice fails to delete please examine the experiment tab on the fabric portal and delete the corresponding slice if it was not already deleted
+    - In this Assignment you will run different alterations of the same experiment with different window and RTT sizes, then you will make inferences based on the figures created, after you will answer some questions. Lastly you will delete the slice to clear resources you used.
+    - **Notes:** In the case the slice fails to delete please examine the experiment tab on the fabric portal and delete the corresponding slice if it was not already deleted
 
 ## Additional Information
 - FABRIC Learn Website: If you encounter problems,questions, or suggestions, please navigate to the FABRIC Knowledge Base at https://learn.fabric-testbed.net/
