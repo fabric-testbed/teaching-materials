@@ -10,7 +10,7 @@ To use the FABRIC bastion host, you must create an SSH configuration file, regar
 
 In this guide, you will learn about the "Configure Environment" notebook, which sets up important environment variables and an SSH configuration file in your operating system. These configurations allow FABRIC to run smoothly in the FABRIC API examples. This notebook is located under the "FABRIC Environment Setup" section.
 
-![Image Alt Text](https://drive.google.com/uc?id=1JDe8QEK1uhlKdU57xW56Ry0Hh6Pdh4mA)
+![Image Alt Text](https://github.com/fabric-testbed/teaching-materials/blob/master/Aditional%20Resources/Figures/Fabric_Configure_Notebook.png?raw=true)
  
 
 ### Set Bastion Username and Project ID
