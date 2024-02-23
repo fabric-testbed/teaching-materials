@@ -45,6 +45,8 @@
         - ping (*2.1* - *2.4*) focuses on the introductions of the linux command
         - pingPlus (*2.5* - *2.12*) is focused on teaching the user about how the command functions with a special program.
 - **Notes:**
+	- Step 2.6 Uses the Controll interface device, this route is not routed by default on the client, if you encounter a problem where "connect failed: Operation now in progress" the route is defoulting back to ssh terminal,
+		please add the route to the ip interface manually using the device connected to the server node, and the server's control interface caution, use the following command "ip route add {ip adress} dev {device name}"
     - The last cell is to delete the slice and free resources, make sure you set "Check" to "True" to delete the slice
     - In the case the slice fails to delete please examine the experiment tab on the fabric portal and delete the corresponding slice if it was not already deleted
 
