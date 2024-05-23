@@ -1,4 +1,3 @@
----
 - name: Configure client
   hosts: client
   tasks:
@@ -8,7 +7,5 @@
      apt: name=iperf update_cache=yes
    - name: create local directory
      file: path='/local' state=directory mode='0755'
-   - name: copy scripts into /local with permissions pull
-     synchronize: src=~/HelloAnsible/scripts dest=/local mode=pull rsync_path="sudo rsync" 
-   - name: Set permissions to 755
-     file: path=/local recurse=yes mode='0755'
+   - name: copy scripts into /local with permissions push
+     synchronize: src=~/HelloAnsible/scripts dest=/local mode=push
