@@ -1,4 +1,4 @@
-ls#!/bin/bash
+#!/bin/bash
 # Copyright (c) 2010-2017 Raytheon BBN Technologies
 # 
 # Permission is hereby granted, free of charge, to any person obtaining
