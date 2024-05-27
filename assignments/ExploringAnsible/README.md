@@ -1,12 +1,12 @@
 # FABRIC Educational Materials
-# Tutorial: Webserver
+# Tutorial: Exploring Ansible
 ## Introduction
-The goal of this exercise is to give user hands-on experience installing and interacting with a web server. User will install and start a web server, generate a simple HTML file, and use a client node to retrieve the file.
- 
+  The goal of this exercise is to introduce the user how to use an ansible.
+
 ## Running the Tutorial
-- The tutorial has three Jupyter notebook:
+- The tutorial has three Jupyter notebooks and one folder:
     - **CreateSlice.ipynb**: Creates the FABRIC slice/topology needed for this tutorial
-    - **webserver.ipynb**: Configures the IPv4/IPv6 network address, installs tools needed and then begins the webserver tutorial
+    - **ExploringAnsible.ipynb**: Configures the IPv4/IPv6 network address and then begins the Queues tutorial
 - To run the tutorial:
    - Login to the FABRIC Portal and JupyterHub
     	- Login to the [FABRIC Portal](https://portal.fabric-testbed.net/)
@@ -15,22 +15,23 @@ The goal of this exercise is to give user hands-on experience installing and int
     	- Open a terminal in JupyterHub by clicking the "Terminal" tile under "Other" in the Launcher tab
     	- In the terminal window, type the following commands to download (pull) the latest version of the set of tutorials from Github
 ```
-        	mkdir teaching-materials
-        	cd teaching-materials
-        	git clone https://github.com/fabric-testbed/teaching-materials.git
+        	    mkdir teaching-materials
+        	    cd teaching-materials
+        	    git clone https://github.com/fabric-testbed/teaching-materials.git
 ```
-
    - Run the Tutorial Notebooks
-    	- In the left-hand column of JupyterHub, navigate to the Webserver tutorial
+    	- In the left-hand column of JupyterHub, navigate to the SystematicExperimentation folder
     	- Open and execute the CreateSlice.ipynb notebook
-        - Then open and execute the steps on webserver.ipynb
-
-## Overview of the Notebooks in this Tutorial
+        - Then open and execute the SystematicExperimentation.ipynb
 
 ### Create Slice Notebook
-- In this notebook you will request a slice that contains three nodes (ND1, server, and ND2) and two Layer-2 networks (LAN) with the following configuration:
+- In this notebook you will request a slice that contains three nodes (NDA, NDB, and a NDC) and three Layer-2 networks (LANs) with the following configurations:
 ```
-        	ND1 <-> LAN 1 <-> server <-> LAN 2 <-> ND2
+            ansible
+           /       \
+     	LAN_AS     LAN_SC
+    	/              	\
+  	server <-> LAN_SC <-> client
 ```
 - Each node should have the following requirements:
 	- NIC_Basic model
@@ -41,14 +42,15 @@ The goal of this exercise is to give user hands-on experience installing and int
  - To successfully run this notebook you should only need to run the code blocks in order from top to bottom
  - **Notes:** If your slice creation fails you can just try to specify a site in the second code block run them again. (you can get a site from "https://portal.fabric-testbed.net/" by looking at the map, use the name **outside** of the parenthesis and make sure the site chosen is up)
 
-### Webserver Notebook
+### Exploring Ansible Notebook
 - To successfully run this notebook you need to run the code blocks first (*Retrieve Slice*) and then follow the steps in (*Guided Experiment*):
     - Retrieve Slice: This step is not required but it will allow you to easily access the nodes in the slice you will use for the experiment.
 	- Guided Experiment: This is the Experiment, To complete this section just follow the provided instructions to complete the exercise.
-    - Assignment: you will answer questions and use what you learned to send codes to the server to see if you can get a responce out of the server. Lastly you will delete the slice to clear resources you used.
-    - **Notes:** In the case the slice fails to delete please examine the experiment tab on the fabric portal and delete the corresponding slice if it was not already deleted
+- **Notes:**
+	- Make sure you check your bash agent as it can lead to errors when adding a slice key
+	- make sure you accept the fingerprint for each node when you are asked with 'Yes', if you don't do this step you might get stuck in an infinite loop
 
 ## Additional Information
 - FABRIC Learn Website: If you encounter problems,questions, or suggestions, please navigate to the FABRIC Knowledge Base at https://learn.fabric-testbed.net/
 - FABRIC Teaching Material Github: <https://github.com/fabric-testbed/teaching-materials>
-- This assignment was originally written for the GENI network (<https://groups.geni.net/geni/wiki/WebServerExample>), but has been converted to run in FABRIC.
+- This assignment was originally written for the GENI network (<https://groups.geni.net/geni/wiki/GENIEducation/SampleAssignments/IPRouting/Procedure>), but has beeen converted to run in FABRIC.

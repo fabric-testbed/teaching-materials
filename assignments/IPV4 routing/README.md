@@ -14,11 +14,11 @@
    - Download the latest copy of the tutorials from GitHub
     	- Open a terminal in JupyterHub by clicking the "Terminal" tile under "Other" in the Launcher tab
     	- In the terminal window, type the following commands to download (pull) the latest version of the set of tutorials from Github
-
+```
         	    mkdir teaching-materials
         	    cd teaching-materials
         	    git clone https://github.com/fabric-testbed/teaching-materials.git
-
+```
    - Run the Tutorial Notebooks
     	- In the left-hand column of JupyterHub, navigate to the Routing with IPv4 tutorial
     	- Open and execute the CreateSlice.ipynb notebook
@@ -43,9 +43,10 @@
  - **Notes:** If your slice creation fails you can just try to specify a site in the second code block run them again. (you can get a site from "https://portal.fabric-testbed.net/" by looking at the map, use the name **outside** of the parenthesis and make sure the site chosen is up)
 
 ### Routing with IPv4 Notebook
-- To successfully run this notebook you need to run the code blocks first (*Setup Experiment*) and then run the experiment (*Run Assignment*):
-	- Setup Experiment: This is the setup, run the provided Codeblocks to setup the network and to provide the correct addresses to each node.
-    - Run Assignment: This is the Experiment, To complete this section just follow the provided instructions to complete the exercise.
+- To successfully run this notebook you need to run the code blocks first (*Retrieve Slice*) and then follow the steps in (*Guided Experiment*):
+    - Retrieve Slice: This step is not required but it will allow you to easily access the nodes in the slice you will use for the experiment.
+	- Guided Experiment: This is the Experiment, To complete this section just follow the provided instructions to complete the exercise.
+    - Assignment: This is the Experiment, To complete this section just follow the provided instructions to complete the exercise.
 - **Notes:**
     - There is a link to the linux route command for reference, feal free to take a look at it if you are stuck and remember that the routes must be made both ways
     - The last cell is to delete the slice and free resources, make sure you set "Check" to "True" to delete the slice

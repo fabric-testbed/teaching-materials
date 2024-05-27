@@ -1,0 +1,11 @@
+- name: Configure client
+  hosts: client
+  tasks:
+   - name: install apache2
+     apt: name=apache2 update_cache=yes
+   - name: install iperf
+     apt: name=iperf update_cache=yes
+   - name: create local directory
+     file: path='/local' state=directory mode='0755'
+   - name: copy scripts into /local with permissions push
+     synchronize: src=~/HelloAnsible/scripts dest=/local mode=push

@@ -47,9 +47,10 @@ The goal of this tutorial is to understand how OSPF works and to allow the user 
  - **Notes:** If your slice creation fails you can just try to specify a site in the second code block run them again. (you can get a site from "https://portal.fabric-testbed.net/" by looking at the map, use the name **outside** of the parenthesis and make sure the site chosen is up)
 
 ### OSPF Notebook
-- To successfully run this notebook you need to run the code blocks first (*Setup Experiment*) and then run the experiment (*Run Experiment*):
-	- Guided Experiment: This is the Experiment, To complete this section just follow the provided instructions to understand the 3 capabilities in this tutorial: Router Interface, Dead Link and Route Change.
-    - In this Assignment you will attempt to test how this algorithm can be tricked into sending route errors, and experiment with the 'hello' & 'dead' intervals to answer some questions
+- To successfully run this notebook you need to run the code blocks first (*Retrieve Slice*) and then follow the steps in (*Guided Experiment*):
+    - Retrieve Slice: This step is not required but it will allow you to easily access the nodes in the slice you will use for the experiment.
+	- Guided Experiment: This is the Experiment, To complete this section just follow the provided instructions to complete the exercise.
+    - Assignment: you will attempt to test how this algorithm can be tricked into sending route errors, and experiment with the 'hello' & 'dead' intervals to answer some questions
     - **Notes:** In the case the slice fails to delete please examine the experiment tab on the fabric portal and delete the corresponding slice if it was not already deleted
 
 ## Additional Information

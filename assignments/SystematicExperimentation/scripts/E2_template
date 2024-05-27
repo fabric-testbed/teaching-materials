@@ -1,0 +1,11 @@
+   - name: map network using nmap
+     command: nmap -sP -oX {{ nmap_xml_file }} {{ address_range }}
+   - name: convert nmap xml to html
+     shell:  xsltproc /usr/share/nmap/nmap.xsl {{ nmap_xml_file }} > {{ nmap_html_file }}
+   - name: create directory for nmap logs in WEB_ROOT/nmaplogs with permissions of 755
+     file: >
+        dest={{ WEB_ROOT }}/{{ nmap_dir }}
+        state=directory
+        mode=755
+   - name: copy nmap html file to a public place
+     command: mv {{ nmap_html_file }} {{ WEB_ROOT }}/{{ nmap_dir }}/nmap.html removes={{ nmap_html_file }}

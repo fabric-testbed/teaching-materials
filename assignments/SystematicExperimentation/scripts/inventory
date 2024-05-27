@@ -1,0 +1,14 @@
+all:
+  children:
+    nodes:
+      hosts:
+        client_0:
+          ansible_host: 10.10.0.1
+        client_1:
+          ansible_host: 10.10.0.2
+        client_2:
+          ansible_host: 10.10.0.3
+        server_0:
+           ansible_host: 10.10.1.1
+        server_1:
+           ansible_host: 10.10.1.2
