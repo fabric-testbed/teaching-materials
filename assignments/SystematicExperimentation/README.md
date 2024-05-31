@@ -25,7 +25,7 @@
         - Then open and execute the SystematicExperimentation.ipynb
 
 ### Create Slice Notebook
-- In this notebook you will request a slice that contains three nodes (NDA, NDB, and a NDC) and three Layer-2 networks (LANs) with the following configurations:
+- In this notebook you will request a slice that contains three nodes (Cl0, Cl1, Cl2, Sv1, Sv0, and a Ans) and three Layer-2 networks (LANs) with the following configurations:
 ```
     Ans                    Cl0
           \             /

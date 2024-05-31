@@ -1,12 +1,12 @@
 # FABRIC Educational Materials
-# Tutorial: Exploring Ansible
+# Tutorial: OpenFlow With Controller (Ryu)
 ## Introduction
-  The goal of this exercise is to introduce the user how to use an ansible.
+  The goal of this exercise is to introduce the user to the beneffits of switches in networks
 
 ## Running the Tutorial
 - The tutorial has three Jupyter notebooks and one folder:
     - **CreateSlice.ipynb**: Creates the FABRIC slice/topology needed for this tutorial
-    - **ExploringAnsible.ipynb**: Configures the IPv4/IPv6 network address and then begins the Queues tutorial
+    - **OpenVS_Ryu.ipynb**: Configures the IPv4/IPv6 network address and then begins the Queues tutorial
 - To run the tutorial:
    - Login to the FABRIC Portal and JupyterHub
     	- Login to the [FABRIC Portal](https://portal.fabric-testbed.net/)
@@ -25,13 +25,17 @@
         - Then open and execute the SystematicExperimentation.ipynb
 
 ### Create Slice Notebook
-- In this notebook you will request a slice that contains three nodes (client, ansible, and a server) and three Layer-2 networks (LANs) with the following configurations:
+- In this notebook you will request a slice that contains 5 nodes (Host1, Host2, Host3, Bridge and a Controller node) and four Layer-2 networks (LANs) with the following configurations:
 ```
-            ansible
-           /       \
-     	LAN_AS     LAN_SC
-    	/              	\
-  	server <-> LAN_SC <-> client
+			Controller
+			   | 
+		 ControllerLan
+			   |
+      ---   Bridge   ---
+	  |		   | 		|	 
+    H1LAN    H2LAN    H3LAN
+      |        |      	 |
+  	Host1    Host2  Host3
 ```
 - Each node should have the following requirements:
 	- NIC_Basic model
@@ -46,9 +50,6 @@
 - To successfully run this notebook you need to run the code blocks first (*Retrieve Slice*) and then follow the steps in (*Guided Experiment*):
     - Retrieve Slice: This step is not required but it will allow you to easily access the nodes in the slice you will use for the experiment.
 	- Guided Experiment: This is the Experiment, To complete this section just follow the provided instructions to complete the exercise.
-- **Notes:**
-	- Make sure you check your bash agent as it can lead to errors when adding a slice key
-	- make sure you accept the fingerprint for each node when you are asked with 'Yes', if you don't do this step you might get stuck in an infinite loop
 
 ## Additional Information
 - FABRIC Learn Website: If you encounter problems,questions, or suggestions, please navigate to the FABRIC Knowledge Base at https://learn.fabric-testbed.net/
