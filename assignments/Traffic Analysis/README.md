@@ -41,10 +41,10 @@ The goal of this exercise is to give user hands-on experience using networking t
  - **Notes:** If your slice creation fails you can just try to specify a site in the second code block run them again. (you can get a site from "https://portal.fabric-testbed.net/" by looking at the map, use the name **outside** of the parenthesis and make sure the site chosen is up)
 
 ### Traffic Analysis Notebook
-- To successfully run this notebook you need to run the code blocks first (*Setup Experiment*) and then run the experiment (*Run Experiment*):
-	- Setup Experiment: This is the setup, run the provided Codeblocks to setup the network and to provide the correct addresses to each node.
-    - Run Experiment: This is the Experiment, To complete this section just follow the provided instructions to understand the 5 sections: ifconfig, Adjust the MTU, ping, TCPdump, and, More on TCPdump options.
-    - In this Assignment you will use what you have learned on the experiment to answer the questions in this assignment following the provided instructions. Lastly you will delete the slice to clear resources you used.
+- To successfully run this notebook you need to run the code blocks first (*Retrieve Slice*) and then follow the steps in (*Guided Experiment*):
+    - Retrieve Slice: This step is not required but it will allow you to easily access the nodes in the slice you will use for the experiment.
+	- Guided Experiment: This is the Experiment, To complete this section just follow the provided instructions to complete the exercise.
+    - Assignment: you will use what you have learned on the experiment to answer the questions in this assignment following the provided instructions. Lastly you will delete the slice to clear resources you used.
     - **Notes:** In the case the slice fails to delete please examine the experiment tab on the fabric portal and delete the corresponding slice if it was not already deleted
 
 ## Additional Information

@@ -42,14 +42,14 @@ The Goal of this exercise is to show students how to generate traffic using iper
   - **Notes:** It can also be the case that your project does not have access to more than 10GB of disk space, you will then have to change the disk space to 10 in the second cell at "create slice" notebook, step **2.2.4 will be 30 seconds instead of 90** and **2.2.5 will be 10 seconds instead of 30** in the "TCP_Traffic" notebook
 
 ### TCP Traffic Notebook
-- To successfully run this notebook you need to run the code blocks first (*Setup Experiment*) and then run the experiment (*Run Experiment*):
-	- Setup Experiment: This is the setup, run the provided Codeblocks to setup the network and to provide the correct addresses to each node.
-    - Run Experiment: This is the Experiment, To complete this section just follow the provided instructions to understand the 2 sections: Iperf in One Direction and TCP vs UDP.
+- To successfully run this notebook you need to run the code blocks first (*Retrieve Slice*) and then follow the steps in (*Guided Experiment*):
+    - Retrieve Slice: This step is not required but it will allow you to easily access the nodes in the slice you will use for the experiment.
+	- Guided Experiment: This is the Experiment, To complete this section just follow the provided instructions to complete the exercise.
+    - Assignment: you will experiment with inputs to the commands to test the capabilities of the nodes transfer rate.
 - **Notes:**
    + if you run out of memory during the assignment be sure to re-try the assignment increasing the disk space by 50 - 100, if the problem persist lower the time the ss program is running.
    + Do not run iperf with the graphing script for more than 2 minutes to avoid memory errors
-   - In this Assignment you will experiment with inputs to the commands to test the capabilities of the nodes transfer rate.
-   - **Notes:** In the case the slice fails to delete please examine the experiment tab on the fabric portal and delete the corresponding slice if it was not already deleted
+   + In the case the slice fails to delete please examine the experiment tab on the fabric portal and delete the corresponding slice if it was not already deleted
     
 ## Additional Information
 - FABRIC Learn Website: If you encounter problems,questions, or suggestions, please navigate to the FABRIC Knowledge Base at https://learn.fabric-testbed.net/

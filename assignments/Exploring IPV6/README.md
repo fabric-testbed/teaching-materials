@@ -15,12 +15,11 @@ The goal of this tutorial is to learn about IPv6 and to experiment with the IPv6
 	- Download the latest copy of the tutorials from GitHub
     	- Open a terminal in JupyterHub by clicking the "Terminal" tile under "Other" in the Launcher tab
     	- In the terminal window, type the following commands to download (pull) the latest version of the set of tutorials from Github
-
+```
         	    mkdir teaching-materials
         	    cd teaching-materials
         	    git clone https://github.com/fabric-testbed/teaching-materials.git
-
-
+```
 	- Run the Tutorial Notebooks
     	- In the left-hand column of JupyterHub, navigate to the Exploring IPv6 tutorial
     	- Then open and execute the CreateSlice.ipynb
@@ -45,9 +44,10 @@ The goal of this tutorial is to learn about IPv6 and to experiment with the IPv6
  - **Notes:** If your slice creation fails you can just try to specify a site in the second code block run them again. (you can get a site from "https://portal.fabric-testbed.net/" by looking at the map, use the name **outside** of the parenthesis and make sure the site chosen is up)
 
 ### Exploring IPV6 Notebook
-- To successfully run this notebook you need to follow the steps on the experiment (*Guided Experiment*) and then answer the questions under Assignment:
-	- Guided Experiment: This is the Experiment, To complete this section just follow the provided instructions to understand the 3 sections: Basic Connection, Header Comparison and Global Address.
-	- In this Assignment you will analyze the headers once again and then delete the slice after answering the questions to clean the resources used.
+- To successfully run this notebook you need to run the code blocks first (*Retrieve Slice*) and then follow the steps in (*Guided Experiment*):
+    - Retrieve Slice: This step is not required but it will allow you to easily access the nodes in the slice you will use for the experiment.
+	- Guided Experiment: This is the Experiment, To complete this section just follow the provided instructions to complete the exercise.
+    - Assignment: you will analyze the headers once again and then delete the slice after answering the questions to clean the resources used.
 	- **Notes:** In the case the slice fails to delete please examine the experiment tab on the fabric portal and delete the corresponding slice if it was not already deleted- Guided Experiment: This is the Experiment, To complete this section just follow the provided instructions to understand the 3 sections: Basic Connection, Header Comparison and Global Address.
  
 ## Additional Information

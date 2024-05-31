@@ -1,12 +1,12 @@
 # FABRIC Educational Materials
-# Tutorial: Webserver
+# Tutorial: OpenFlow With Controller (Ryu)
 ## Introduction
-The goal of this exercise is to give user hands-on experience installing and interacting with a web server. User will install and start a web server, generate a simple HTML file, and use a client node to retrieve the file.
- 
+  The goal of this exercise is to introduce the user to the beneffits of switches in networks
+
 ## Running the Tutorial
-- The tutorial has three Jupyter notebook:
+- The tutorial has three Jupyter notebooks and one folder:
     - **CreateSlice.ipynb**: Creates the FABRIC slice/topology needed for this tutorial
-    - **webserver.ipynb**: Configures the IPv4/IPv6 network address, installs tools needed and then begins the webserver tutorial
+    - **OpenVS_Ryu.ipynb**: Configures the IPv4/IPv6 network address and then begins the Queues tutorial
 - To run the tutorial:
    - Login to the FABRIC Portal and JupyterHub
     	- Login to the [FABRIC Portal](https://portal.fabric-testbed.net/)
@@ -15,22 +15,27 @@ The goal of this exercise is to give user hands-on experience installing and int
     	- Open a terminal in JupyterHub by clicking the "Terminal" tile under "Other" in the Launcher tab
     	- In the terminal window, type the following commands to download (pull) the latest version of the set of tutorials from Github
 ```
-        	mkdir teaching-materials
-        	cd teaching-materials
-        	git clone https://github.com/fabric-testbed/teaching-materials.git
+        	    mkdir teaching-materials
+        	    cd teaching-materials
+        	    git clone https://github.com/fabric-testbed/teaching-materials.git
 ```
-
    - Run the Tutorial Notebooks
-    	- In the left-hand column of JupyterHub, navigate to the Webserver tutorial
+    	- In the left-hand column of JupyterHub, navigate to the SystematicExperimentation folder
     	- Open and execute the CreateSlice.ipynb notebook
-        - Then open and execute the steps on webserver.ipynb
-
-## Overview of the Notebooks in this Tutorial
+        - Then open and execute the SystematicExperimentation.ipynb
 
 ### Create Slice Notebook
-- In this notebook you will request a slice that contains three nodes (ND1, server, and ND2) and two Layer-2 networks (LAN) with the following configuration:
+- In this notebook you will request a slice that contains 5 nodes (Host1, Host2, Host3, Bridge and a Controller node) and four Layer-2 networks (LANs) with the following configurations:
 ```
-        	ND1 <-> LAN 1 <-> server <-> LAN 2 <-> ND2
+			Controller
+			   | 
+		 ControllerLan
+			   |
+      ---   Bridge   ---
+	  |		   | 		|	 
+    H1LAN    H2LAN    H3LAN
+      |        |      	 |
+  	Host1    Host2  Host3
 ```
 - Each node should have the following requirements:
 	- NIC_Basic model
@@ -41,14 +46,12 @@ The goal of this exercise is to give user hands-on experience installing and int
  - To successfully run this notebook you should only need to run the code blocks in order from top to bottom
  - **Notes:** If your slice creation fails you can just try to specify a site in the second code block run them again. (you can get a site from "https://portal.fabric-testbed.net/" by looking at the map, use the name **outside** of the parenthesis and make sure the site chosen is up)
 
-### Webserver Notebook
+### Exploring Ansible Notebook
 - To successfully run this notebook you need to run the code blocks first (*Retrieve Slice*) and then follow the steps in (*Guided Experiment*):
     - Retrieve Slice: This step is not required but it will allow you to easily access the nodes in the slice you will use for the experiment.
 	- Guided Experiment: This is the Experiment, To complete this section just follow the provided instructions to complete the exercise.
-    - Assignment: you will answer questions and use what you learned to send codes to the server to see if you can get a responce out of the server. Lastly you will delete the slice to clear resources you used.
-    - **Notes:** In the case the slice fails to delete please examine the experiment tab on the fabric portal and delete the corresponding slice if it was not already deleted
 
 ## Additional Information
 - FABRIC Learn Website: If you encounter problems,questions, or suggestions, please navigate to the FABRIC Knowledge Base at https://learn.fabric-testbed.net/
 - FABRIC Teaching Material Github: <https://github.com/fabric-testbed/teaching-materials>
-- This assignment was originally written for the GENI network (<https://groups.geni.net/geni/wiki/WebServerExample>), but has been converted to run in FABRIC.
+- This assignment was originally written for the GENI network (<https://groups.geni.net/geni/wiki/GENIEducation/SampleAssignments/IPRouting/Procedure>), but has beeen converted to run in FABRIC.

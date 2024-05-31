@@ -1,0 +1,30 @@
+---
+- name: Configure server
+  hosts: server
+  tasks:
+   - name: install apache2
+     apt: name=apache2 update_cache=yes
+     become: yes
+   - name: install iperf
+     apt: name=iperf update_cache=yes
+     become: yes
+   - name: /usr/sbin/a2enmod status
+     # INSERT COMMAND HERE
+   - name: check /etc/apache2/mods-enabled/status.conf file is absent
+     # INSERT COMMAND HERE
+   - name: copy website/index.html into /var/www
+     # INSERT COMMAND HERE
+   - name: copy the website/graphics directory into /var/www
+     # INSERT COMMAND HERE
+   - name: rm -rf /var/www/html
+     # INSERT COMMAND HERE
+   - name: Make simlink to webfiles
+     # INSERT COMMAND HERE
+   - name: restart apache2 service
+     # INSERT COMMAND HERE
+   - name: Make sure /etc/apache2/conf.d/extendedstatus file contains "ExtendedStatus On"
+     # INSERT COMMAND HERE
+   - name: Make sure /etc/apache2/sites-available/default contains Location information
+     # INSERT COMMAND HERE
+   - name: create directory for iperf logs in /var/www/iperflogs with permissions of 755
+     # INSERT COMMAND HERE

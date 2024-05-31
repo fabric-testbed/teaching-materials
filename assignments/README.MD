@@ -28,3 +28,11 @@ The upcoming assignments offer users an opportunity to acquaint themselves with 
    + The goal of this exercise is to give user hands-on experience using networking tools such as: ping, tcpdump, and ifconfig.
  - [Traffic Generation](https://github.com/fabric-testbed/teaching-materials/tree/main/assignments/TrafficGeneration)
    + The goal of this exercise is to introduce the user to traffic generation using Nping
+
+### Software Deployment
+- [Exploring Ansible](./ExploringAnsible/CreateSlice.ipynb): 
+    + Use ansible to configure and install a webserver-client relationship to two nodes
+- [Systematic Experimentation](./SystematicExperimentation/CreateSlice.ipynb):
+    + Use an ansible file to preconfigure a set of servers and nodes in a slice to place a customized topology using an ansible playbook.
+
+
