@@ -8,103 +8,27 @@ To use the FABRIC bastion host, you must create an SSH configuration file, regar
 
 ### Setting up FABRIC Environment: Configure Environment Notebook
 
-In this guide, you will learn about the "Configure Environment" notebook, which sets up important environment variables and an SSH configuration file in your operating system. These configurations allow FABRIC to run smoothly in the FABRIC API examples. This notebook is located under the "FABRIC Environment Setup" section.
+In this guide, you will learn about the "Configure and Validate" notebook, which sets up important environment variables and an SSH configuration file in your operating system. These configurations allow FABRIC to run smoothly in the FABRIC API examples. This notebook is located under the "Configure and Validate" folder in jupyter-examples. You can also navigate to it from the "Getting Started" section in start_here.ipynb notebook from jupyter-examples. 
 
 ![Image Alt Text](https://github.com/fabric-testbed/teaching-materials/blob/master/Aditional%20Resources/Figures/Fabric_Configure_Notebook.png?raw=true)
  
-
-### Set Bastion Username and Project ID
-
 In the first cell of the notebook, 
 ```
-export FABRIC_BASTION_USERNAME='<YOU_BASTION_USERNAME>'
-export FABRIC_PROJECT_ID='<YOUR_PROJECT_ID>'
+# Update this line to specify your project id
+project_id = "REPLACE_WITH_YOUR_PROJECT_ID"
 
-export FABRIC_BASTION_PRIVATE_KEY_LOCATION=${HOME}/work/fabric_config/fabric_bastion_key
+# Uncomment the line below if using 'FABRIC Tutorials' Project
+#project_id="a7818636-1fa1-4e77-bb03-d171598b0862"
 
-export FABRIC_BASTION_SSH_CONFIG_FILE=${HOME}'/work/fabric_config/ssh_config'
-export FABRIC_RC_FILE=${HOME}'/work/fabric_config/fabric_rc'
+fablib = fablib_manager(project_id=project_id)
 ```
 set the following variables:
 
-- `FABRIC_BASTION_USERNAME`: Your FABRIC bastion username (found in the "Experiments" tab under SSH keys).
-- `FABRIC_PROJECT_ID`: Your FABRIC project ID (found in the "Projects" tab).
+- `project_id`: Your FABRIC project ID (found in the "Projects" tab).
 
-Enclose both the username and project ID in apostrophes.
+Enclose the project ID in apostrophes.
 
-### Set Tokens and Keys
-
-```
-export FABRIC_TOKEN_FILE=${HOME}'/.tokens.json'
-export FABRIC_SLICE_PRIVATE_KEY_FILE=${HOME}/work/fabric_config/slice_key
-export FABRIC_SLICE_PUBLIC_KEY_FILE=${FABRIC_SLICE_PRIVATE_KEY_FILE}.pub
-```
-The next set of cells establishes the location of your tokens file and your slice private key. These keys enable you to use the FABRIC API and SSH into your FABRIC slices.
-
-- `FABRIC_TOKEN_FILE`: Location of your tokens file.
-- `FABRIC_SLICE_PRIVATE_KEY_FILE`: Location of your slice private key.
-
-### Set Permissions
-
-```
-chmod 600 ${FABRIC_BASTION_PRIVATE_KEY_LOCATION}
-chmod 600 ${FABRIC_SLICE_PRIVATE_KEY_FILE}
-```
-Run the cell that sets permissions on your bastion and slice key files. This ensures secure access to your nodes through the bastion host.
-
-### Create FABRIC RC and SSH Config Files
-
-Run the cells that create the `FABRIC RC` and SSH config files. These files contain important configuration values. Note that the fabric log file location is where FABRIC will send output if an error occurs during a run.
-```
-cat <<EOF > ${FABRIC_RC_FILE}
-export FABRIC_CREDMGR_HOST=cm.fabric-testbed.net
-export FABRIC_ORCHESTRATOR_HOST=orchestrator.fabric-testbed.net
-
-export FABRIC_PROJECT_ID=${FABRIC_PROJECT_ID}
-export FABRIC_TOKEN_LOCATION=${FABRIC_TOKEN_FILE}
-
-export FABRIC_BASTION_HOST=bastion.fabric-testbed.net
-export FABRIC_BASTION_USERNAME=${FABRIC_BASTION_USERNAME}
-
-export FABRIC_BASTION_KEY_LOCATION=${FABRIC_BASTION_PRIVATE_KEY_LOCATION}
-#export FABRIC_BASTION_KEY_PASSPHRASE=
-
-export FABRIC_SLICE_PRIVATE_KEY_FILE=${FABRIC_SLICE_PRIVATE_KEY_FILE}
-export FABRIC_SLICE_PUBLIC_KEY_FILE=${FABRIC_SLICE_PUBLIC_KEY_FILE} 
-#export FABRIC_SLICE_PRIVATE_KEY_PASSPHRASE=
-
-export FABRIC_LOG_FILE=${HOME}/fablib.log
-export FABRIC_LOG_LEVEL=INFO 
-
-export FABRIC_AVOID=''
-
-export FABRIC_SSH_COMMAND_LINE="ssh -i {{ _self_.private_ssh_key_file }} -F ${HOME}/work/fabric_config/ssh_config {{ _self_.username }}@{{ _self_.management_ip }}"
-EOF
-```
-
-The fabric RC file will be created in the specified location.
-
-### Create SSH Config File
-
-Run the cell that creates the SSH config file. This file isn't used internally by FABRIC but is useful for SSHing into your nodes directly. After any modifications, run the cell to create the config file.
-```
-cat <<EOF > ${FABRIC_BASTION_SSH_CONFIG_FILE}
-UserKnownHostsFile /dev/null
-StrictHostKeyChecking no
-ServerAliveInterval 120 
-
-Host bastion.fabric-testbed.net
-     User ${FABRIC_BASTION_USERNAME}
-     ForwardAgent yes
-     Hostname %h
-     IdentityFile ${FABRIC_BASTION_PRIVATE_KEY_LOCATION}
-     IdentitiesOnly yes
-
-Host * !bastion.fabric-testbed.net
-     ProxyJump ${FABRIC_BASTION_USERNAME}@bastion.fabric-testbed.net:22
-EOF
-```
-
+This will take care of creating your Bastion key pair, ssh configuration file, sliver keys and fabric_rc notebook. 
 
 
 > **Important Note:** If you have already utilized the FABRIC portal to set up the environment using the "Configure Environment" option, you can skip the manual steps outlined below. The following instructions are relevant when generating SSH keys using Linux or PowerShell.
